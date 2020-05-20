@@ -1,0 +1,15 @@
+<!-- <div class="container-fluid"> -->
+<form #userForm="ngForm" (ngSubmit)="onSubmit()" class="card p-3 bg-light" style="margin-top:50px;">
+      <!-- {{answer | json}} -->
+         <!-- <hr> -->
+         <div class="form-group">
+            <h5 class="text-center">Post Your Answer</h5>
+            <textarea style="margin-top:20px;" class="form-control" rows="5" name="description" [(ngModel)]="answer.description" required></textarea>
+          </div>
+        <button class="btn btn-primary" type="submit">Answer</button>
+
+</form>
+
+
+<hr>
+

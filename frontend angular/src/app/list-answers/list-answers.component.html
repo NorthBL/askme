@@ -1,0 +1,18 @@
+<!-- <ul>
+  <li *ngFor="let answer of answers">
+    <p>{{answer.description}}</p>
+
+  </li>
+</ul> -->
+<div *ngFor="let answer of answers" style="margin-top:10px;" class="card p-3 bg-info">
+<div class="media mt-3">
+    <a class="pr-3" href="/user/{{answer.user.id}}">
+      <img class="rounded" style="width:50px; height: 50px; " [src]="answer.user.profileImgUrl" alt="Generic placeholder image">
+    </a>
+    <div class="media-body">
+      <h5 class="mt-0"></h5>
+      <p></p>
+      <p class="mb-0 text-white">{{answer.description}}</p>
+    </div>
+  </div>
+</div>

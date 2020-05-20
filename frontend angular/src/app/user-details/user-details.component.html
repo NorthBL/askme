@@ -1,0 +1,11 @@
+  <div class="card mx-auto" style="width:400px">
+    <img class="card-img-top" [src]="user.profileImgUrl" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">{{user.firstName}} {{user.lastName}} ({{user.username}})</h4>
+      <p class="card-text">{{user.profileDescription}}</p>
+      <!-- <a href="#" class="btn btn-primary stretched-link">See Profile</a> -->
+    </div>
+  </div>
+  <hr>
+  <h3>Questions Asked By {{user.firstName}}</h3>
+  <app-list-questions [questions]="questions"></app-list-questions>

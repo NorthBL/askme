@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div id="page">
+    <!-- <div id="navigation"> -->
+        <app-navigation></app-navigation>
+    <!-- </div> -->
+    <div style="width:100%;" id="route-content">
+        <!-- <app-content></app-content> -->
+        <div class="container-flow">
+            <div style="width: 100%" class="row">
+                <div class="col-sm-2">
+                   <app-category></app-category>
+                </div>
+                <div class="col-sm-10">
+                        <div class="card p-3 bg-light">
+                    <router-outlet></router-outlet>
+                    </div>  
+                </div>
+
+
+                <!-- <div class="col-sm-2">
+                    <div id="relative-links">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>

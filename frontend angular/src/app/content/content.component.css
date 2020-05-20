@@ -1,0 +1,15 @@
+
+.container{
+    margin-top: 50px;
+}
+.Ask{
+    background-color: lightgrey;
+    
+}
+.questions{
+    margin-top: 50px;
+    background-color: lightgray;
+}
+.answer{
+    border:1px solid black;
+}

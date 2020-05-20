@@ -1,0 +1,21 @@
+<!-- <div>
+  <h3>Questions</h3>
+  <ul class="items">
+<li  *ngFor="let question of questions">
+<button (click)="onSelect(question)">{{question.title}}</button>
+  </ul>
+</div> -->
+<ul class="list-group">
+<li style="margin-top: 25px;" class="list-group-item" *ngFor="let question of questions">
+<div class="media">
+    <a class="pr-3">
+  <img (click)="onSelectUser(question.user)" style="width:100px; height: 100px; " class="align-self-center mr-3 rounded" [src]="question.user.profileImgUrl" >
+  </a>
+  <div class="media-body">
+    <h5 (click)="onSelect(question)" class="mt-0"><a class="btn btn-info btn-lg text-white">{{question.title}}</a></h5>
+    <p>{{question.description}}</p>
+    <p class="mb-0">Category: {{question.category.name}}</p>
+  </div>
+</div>
+</li>
+</ul>
